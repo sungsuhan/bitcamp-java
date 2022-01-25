@@ -5,11 +5,11 @@ package com.example.han.calc;
  * author          : sungsuhan
  * date            : 2022-01-24
  * desc            : 계산기 앱을 실행하는 컨트롤러
- * ================================
+ * =============================================
  * DATE              AUTHOR        NOTE
- * ================================
+ * =============================================
  * 2022-01-25         sungsuhan        최초 생성
- */
+ **/
 
 import com.example.han.calc.CalcApp;
 
@@ -24,34 +24,16 @@ public class CalcDemo {
 
         System.out.println("첫번째 숫자 : ");
         int num1 = scanner.nextInt();
-        System.out.println("계산 기호");
+
+        System.out.println("연산자 + - * /");
         String opcode = scanner.next();
+
         System.out.println("두번째 숫자 : ");
         int num2 = scanner.nextInt();
 
-        System.out.print("답 : ");
-
         String res = calcApp.calc(num1, opcode, num2);
 
-        System.out.println(res);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        System.out.println("답 : " + res);
 
     }
 }
