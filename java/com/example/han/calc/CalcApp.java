@@ -26,7 +26,7 @@ public class CalcApp {
 
         int res = 0;
 
-        if (opcode.equals("+")) {
+        if(opcode.equals("+")) {
             res = num1 + num2;
         }
         else if(opcode.equals("-")){

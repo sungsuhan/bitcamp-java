@@ -32,9 +32,9 @@ public class KakaoDemo {
 
         System.out.println("전송 완료");
 
-        String result = kakaoApp.kakao(telno, message);
+        String res = kakaoApp.kakao(telno, message);
 
-        System.out.println(result);
+        System.out.println(res);
 
     }
 }
