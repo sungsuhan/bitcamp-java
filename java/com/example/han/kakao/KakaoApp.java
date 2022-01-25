@@ -1,5 +1,15 @@
-package com.example.han.calc;
-
+package com.example.han.kakao;
+/**
+ * packageName: com.example.han.calc
+ * fileName        : KakaoApp.java
+ * author          : sungsuhan
+ * date            : 2022-01-24
+ * desc            : 전화번호와 메시지를 받아서 전송하는 앱
+ * ================================
+ * DATE              AUTHOR        NOTE
+ * ================================
+ * 2022-01-25         sungsuhan        최초 생성
+ */
 /**
  * 전화번호와 메시지를 받아서 전송하는 어플을 만드시오
  * 전화번호 String telno, String message

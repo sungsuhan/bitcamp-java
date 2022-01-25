@@ -1,9 +1,15 @@
 package com.example.han.calc;
-
 /**
- * 숫자 2개와 연산자 1개를 받아서 계산하는 계산기를 코딩하시오
- * int, String
- **/
+ * packageName: com.example.han.calc
+ * fileName        : CalcApp.java
+ * author          : sungsuhan
+ * date            : 2022-01-24
+ * desc            : 숫자 2개와 더하기 연산자 1개를 받아서 계산하는 앱
+ * ================================
+ * DATE              AUTHOR        NOTE
+ * ================================
+ * 2022-01-25         sungsuhan        최초 생성
+ */
 
 public class CalcApp {
 

@@ -1,9 +1,18 @@
-package com.example.han.calc;
-
+package com.example.han.kakao;
 /**
- * 전화번호와 메시지를 받아서 전송하는 어플을 만드시오
- * 전화번호 String telno, String message
- **/
+ * packageName: com.example.han.calc
+ * fileName        : KakaoDemo.java
+ * author          : sungsuhan
+ * date            : 2022-01-24
+ * desc            : 카카오 앱을 실행하는 컨트롤러
+ * ================================
+ * DATE              AUTHOR        NOTE
+ * ================================
+ * 2022-01-25         sungsuhan        최초 생성
+ */
+
+
+import com.example.han.kakao.KakaoApp;
 
 import java.util.Scanner;
 
