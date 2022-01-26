@@ -16,6 +16,7 @@ public class LoginApp {
     private String id;
     private String pw;
     private String name;
+    static String PASSWORD = "abc";
 
     String log(String id, String pw, String name) {
 
@@ -23,8 +24,18 @@ public class LoginApp {
         this.pw = pw;
         this.name = name;
 
-        return String.format("ID : %s, PW : %s, Name : %s", this.id, this.pw, this.name);
+        String res = "";
 
+        if(pw.equals(PASSWORD)){
+            res = String.format("%s 님의 비번 %s 가 맞습니다, 로그인 성공", this.name, this.pw);
+        }else {
+            res = String.format("%s 님의 ID는 맞고 비번 %s 가 틀립니다, 로그인 실패", this.id, this.pw);
+        }
+
+//        res = String.format("%s 님의 비번 %s 가 맞습니다, 로그인 성공", this.name, this.pw);
+//        res = String.format("%s 님의 ID는 맞고 비번 %s 가 틀립니다, 로그인 실패", this.id, this.pw);
+
+        return res;
 
 
 

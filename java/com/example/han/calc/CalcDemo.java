@@ -31,9 +31,9 @@ public class CalcDemo {
         System.out.println("두번째 숫자 : ");
         int num2 = scanner.nextInt();
 
-        String res = calcApp.calc(num1, opcode, num2);
+        String result = calcApp.calc(num1, opcode, num2);
 
-        System.out.println("답 : " + res);
+        System.out.println("답 : " + result);
 
     }
 }
