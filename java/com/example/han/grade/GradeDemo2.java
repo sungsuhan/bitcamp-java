@@ -4,21 +4,20 @@ import java.util.Scanner;
 
 /**
  * packageName: com.example.han.grade
- * fileName        : GradeDemo.java
+ * fileName        : GradeDemo2.java
  * author          : sungsuhan
  * date            : 2022-01-26
- * desc            : grade앱 실행하는 컨트롤러
+ * desc            :
  * =============================================
  * DATE              AUTHOR        NOTE
  * =============================================
  * 2022-01-26         sungsuhan        최초 생성
  **/
-public class GradeDemo {
+public class GradeDemo2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        GradeApp gradeApp = new GradeApp();
+        GradeApp2 gradeApp2 = new GradeApp2();
 
-        System.out.println("성적 입력칸");
         System.out.println("이름");
         String name = scanner.next();
         System.out.println("국어 점수");
@@ -28,9 +27,9 @@ public class GradeDemo {
         System.out.println("수학 점수");
         int math = scanner.nextInt();
 
-        String res = gradeApp.getInfo(name, kor, eng, math);
-        System.out.println(res);
+        String res = gradeApp2.getGrade(name, kor, eng, math);
 
+        System.out.println(res);
 
     }
 }

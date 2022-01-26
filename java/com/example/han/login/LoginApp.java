@@ -18,7 +18,7 @@ public class LoginApp {
     private String name;
     static String PASSWORD = "abc";
 
-    String log(String id, String pw, String name) {
+    String getLog(String id, String pw, String name) {
 
         this.id = id;
         this.pw = pw;

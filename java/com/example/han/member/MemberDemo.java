@@ -21,9 +21,7 @@ public class MemberDemo {
         String res = memberApp.getMember();
         System.out.println(res);
 
-
-
-
     }
+
 
 }

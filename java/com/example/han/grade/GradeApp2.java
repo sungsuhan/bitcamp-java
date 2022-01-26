@@ -2,7 +2,7 @@ package com.example.han.grade;
 
 /**
  * packageName: com.example.han.grade
- * fileName        : GradeApp.java
+ * fileName        : GradeApp2.java
  * author          : sungsuhan
  * date            : 2022-01-26
  * desc
@@ -29,15 +29,15 @@ package com.example.han.grade;
  * =============================================
  * 2022-01-26         sungsuhan        최초 생성
  **/
-public class GradeApp {
+public class GradeApp2 {
 
     public static String GRADE_TITLE = "성적표";
-    private String name;
-    private int kor;
-    private int eng;
-    private int math;
+    String name;
+    int kor;
+    int eng;
+    int math;
 
-    public String getInfo(String name, int kor, int eng, int math) {
+    public String getGrade(String name, int kor, int eng, int math){
 
         this.name = name;
         this.kor = kor;
@@ -46,7 +46,8 @@ public class GradeApp {
 
         int total = kor + eng + math;
         int avg = total / 3;
-        String pass = (avg >= 60) ? "합격" : "불합격";
+
+        String pass = (avg >= 60) ? "PASS" : "FAIL";
 
         return String.format("########## %s ###########\n" +
                 " 이름: %s\n" +
@@ -57,9 +58,6 @@ public class GradeApp {
                 " 평균(정수): %d점\n" +
                 " 합격여부: %s\n" +
                 "############################", GradeApp.GRADE_TITLE, name, kor, eng, math, total, avg, pass);
-
-
-
 
     }
 }

@@ -12,16 +12,13 @@ package com.example.han.member;
  * 2022-01-26         sungsuhan        최초 생성
  **/
 public class MemberApp {
-
-    public String getMember() {
+    public String getMember(){
         String member = String.format("");
         return member;
 
-
-
-
-
-
-
+        //return String.format("");
     }
+
+
+
 }

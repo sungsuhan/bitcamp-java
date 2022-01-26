@@ -18,7 +18,7 @@ public class CalcApp {
     private String opcode;
     private int num2;
 
-    public String calc(int num1, String opcode, int num2) {
+    public String getCalc(int num1, String opcode, int num2) {
 
         this.num1 = num1;
         this.opcode = opcode;

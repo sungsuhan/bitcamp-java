@@ -21,11 +21,5 @@ public class AbcDemo {
         String res = abcApp.getAbc();
         System.out.println(res);
 
-
-
-
-
-
-
     }
 }

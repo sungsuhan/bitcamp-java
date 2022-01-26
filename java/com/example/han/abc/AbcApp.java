@@ -14,10 +14,11 @@ package com.example.han.abc;
 public class AbcApp {
 
     public String getAbc(){
-        String abc = String.format("22");
-        return abc;
-
-
+//        String abc = String.format("");
+//        return abc;
+        return String.format("fds");
 
     }
+
+
 }
