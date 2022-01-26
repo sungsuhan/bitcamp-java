@@ -24,8 +24,6 @@ public class LoginApp {
         this.pw = pw;
         this.name = name;
 
-        String res = "";
-
         /*
         if(pw.equals(PASSWORD)){
             res = String.format("%s 님의 비번 %s 가 맞습니다, 로그인 성공", this.name, this.pw);
@@ -41,12 +39,11 @@ public class LoginApp {
         }
          */
 
-        res = (pw.equals(PASSWORD)) ? String.format("%s 님의 비번 %s 가 맞습니다, 로그인 성공", this.name, this.pw)
+        return (pw.equals(PASSWORD)) ? String.format("%s 님의 비번 %s 가 맞습니다, 로그인 성공", this.name, this.pw)
                 : String.format("%s 님의 ID는 맞고 비번 %s 가 틀립니다, 로그인 실패", this.id, this.pw);
 
 
 
-        return res;
 
 
 
