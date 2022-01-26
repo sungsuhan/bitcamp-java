@@ -25,9 +25,8 @@ public class BloodTypeApp {
         this.age = age;
         this.bloodtype = bloodtype;
 
-        String res = String.format("%s 씨의 혈액형은 %s 입니다", this.name, this.bloodtype);
+        return String.format("%s 씨의 혈액형은 %s 입니다", this.name, this.bloodtype);
 
-        return res;
 
     }
 }

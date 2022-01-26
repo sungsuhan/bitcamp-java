@@ -47,9 +47,7 @@ public class CalcApp {
         }
 
 
-        String result = String.format("%d %s %d = %d", this.num1, this.opcode, this.num2, res);
-
-        return result;
+       return String.format("%d %s %d = %d", this.num1, this.opcode, this.num2, res);
 
 
     }
