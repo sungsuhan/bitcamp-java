@@ -18,18 +18,19 @@ public class GradeDemo2 {
         Scanner scanner = new Scanner(System.in);
         GradeApp2 gradeApp2 = new GradeApp2();
 
-        System.out.println("이름");
-        String name = scanner.next();
-        System.out.println("국어 점수");
-        int kor = scanner.nextInt();
-        System.out.println("영어 점수");
-        int eng = scanner.nextInt();
-        System.out.println("수학 점수");
-        int math = scanner.nextInt();
+        for (int i=0; i<2; i++) {
+            System.out.println("이름");
+            String name = scanner.next();
+            System.out.println("국어 점수");
+            int kor = scanner.nextInt();
+            System.out.println("영어 점수");
+            int eng = scanner.nextInt();
+            System.out.println("수학 점수");
+            int math = scanner.nextInt();
 
-        String res = gradeApp2.getGrade(name, kor, eng, math);
+            String res = gradeApp2.getGrade(name, kor, eng, math);
 
-        System.out.println(res);
-
+            System.out.println(res);
+        }
     }
 }
