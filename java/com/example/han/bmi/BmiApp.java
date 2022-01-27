@@ -16,12 +16,12 @@ package com.example.han.bmi;
  * 2022-01-25         sungsuhan        최초 생성
  **/
 public class BmiApp {
-    public static String BMI = "무조건 정상인 BMI 측정기";
+    public static String BMI_TITLE = "무조건 정상인 BMI 측정기";
     private String name;
     private String height;
     private String weight;
 
-    String info(String name, String height, String weight) {
+    String getBMI(String name, String height, String weight) {
 
         this.name = name;
         this.height = height;

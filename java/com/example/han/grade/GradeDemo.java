@@ -17,7 +17,7 @@ public class GradeDemo {
     public String execute(String name,int kor,int eng,int math) {
         GradeApp gradeApp = new GradeApp();
 
-        return "";
+        return gradeApp.getGrade(name, kor, eng, math);
 
     }
 }

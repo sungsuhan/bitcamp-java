@@ -32,8 +32,6 @@ public class DemoController {
         GoogleDemo googleDemo = new GoogleDemo();
         GradeDemo gradeDemo = new GradeDemo();
         LoginDemo loginDemo = new LoginDemo();
-        System.out.println("메뉴 선택");
-        String menu = "0.Exit 1.BMI 2.CALC 3.SEARCH 4.GRADE 5.LOGIN";
     /*
         for (int i=0; i<2; i++) {
             System.out.println(menu);
@@ -51,25 +49,23 @@ public class DemoController {
         }
     */
         while (true) {
+            System.out.println("메뉴 선택");
+            String menu = "0.Exit 1.BMI 2.CALC 3.SEARCH 4.GRADE 5.LOGIN";
             System.out.println(menu);
-
-            String select = scanner.next();
-
             String res = "";
-
-            switch (select) {
+            switch (scanner.next()) {
                 case "0" :
                     System.out.println("Exit"); return;
                 case "1" :
-                    System.out.println(BmiApp.BMI + "\n이름, 키, 몸무게 입력");
+                    System.out.println(BmiApp.BMI_TITLE + "\n이름, 키, 몸무게 입력");
                     res = bmiDemo.execute(scanner.next(), scanner.next(), scanner.next());
                     break;
                 case "2" :
-                    System.out.println(CalcApp.CALC_APP + "\n숫자1, 연산자, 숫자2 입력");
+                    System.out.println(CalcApp.CALC_TITLE + "\n숫자1, 연산자, 숫자2 입력");
                     res = calcDemo.execute(scanner.nextInt(), scanner.next(), scanner.nextInt());
                     break;
                 case "3" :
-                    System.out.println(GoogleApp.TITLE + "\n[Google 검색 또는 URL 입력]");
+                    System.out.println(GoogleApp.GOOGLE_TITLE + "\n[Google 검색 또는 URL 입력]");
                     res = googleDemo.execute(scanner.next());
                     break;
                 case "4" :

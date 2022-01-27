@@ -16,7 +16,7 @@ public class LoginDemo {
     public String execute(String id,String pw,String name){
         LoginApp loginApp = new LoginApp();
 
-        return loginApp.getLog(id, pw, name);
+        return loginApp.getLogin(id, pw, name);
 
     }
 }

@@ -17,7 +17,7 @@ public class BmiDemo {
     public String execute(String name, String height, String weight) {
         BmiApp bmiApp = new BmiApp();
 
-        return bmiApp.info(name, height, weight);
+        return bmiApp.getBMI(name, height, weight);
 
     }
 }

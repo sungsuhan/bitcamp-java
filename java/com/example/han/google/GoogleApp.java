@@ -16,10 +16,10 @@ package com.example.han.google;
  * 2022-01-25         sungsuhan        최초 생성
  **/
 public class GoogleApp {
-    public static String TITLE = "Google";
+    public static String GOOGLE_TITLE = "Google";
     private String search;
 
-    String google(String search){
+    String getGoogle(String search){
 
         this.search = search;
 

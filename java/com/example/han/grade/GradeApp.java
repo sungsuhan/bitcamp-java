@@ -37,7 +37,7 @@ public class GradeApp {
     private int eng;
     private int math;
 
-    public String getInfo(String name, int kor, int eng, int math) {
+    public String getGrade(String name, int kor, int eng, int math) {
 
         this.name = name;
         this.kor = kor;

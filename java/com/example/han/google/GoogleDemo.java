@@ -17,7 +17,7 @@ public class GoogleDemo {
     public String execute(String search) {
         GoogleApp googleApp = new GoogleApp();
 
-        return googleApp.google(search);
+        return googleApp.getGoogle(search);
 
     }
 }
