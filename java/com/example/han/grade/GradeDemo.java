@@ -14,26 +14,10 @@ import java.util.Scanner;
  * 2022-01-26         sungsuhan        최초 생성
  **/
 public class GradeDemo {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+    public String execute(String name,int kor,int eng,int math) {
         GradeApp gradeApp = new GradeApp();
 
-        for (int i=1; i<3; i++) {
-
-            System.out.println(i + "번학생 이름");
-            String name = scanner.next();
-            System.out.println("국어 점수");
-            int kor = scanner.nextInt();
-            System.out.println("영어 점수");
-            int eng = scanner.nextInt();
-            System.out.println("수학 점수");
-            int math = scanner.nextInt();
-
-            String res = gradeApp.getInfo(name, kor, eng, math);
-
-            System.out.println(res);
-
-        }
+        return "";
 
     }
 }

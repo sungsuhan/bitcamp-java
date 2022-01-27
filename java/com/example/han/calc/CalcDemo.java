@@ -16,24 +16,10 @@ import com.example.han.calc.CalcApp;
 import java.util.Scanner;
 
 public class CalcDemo {
-    public void execute(){
-        Scanner scanner = new Scanner(System.in);
+    public String execute(int num1, String opcode, int num2){
         CalcApp calcApp = new CalcApp();
 
-        System.out.println(CalcApp.CALC_APP);
-
-        System.out.println("첫번째 숫자 : ");
-        int num1 = scanner.nextInt();
-
-        System.out.println("연산자 + - * /");
-        String opcode = scanner.next();
-
-        System.out.println("두번째 숫자 : ");
-        int num2 = scanner.nextInt();
-
-        String result = calcApp.getCalc(num1, opcode, num2);
-
-        System.out.println("답 : " + result);
+        return calcApp.getCalc(num1, opcode, num2);
 
     }
 }

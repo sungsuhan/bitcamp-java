@@ -7,7 +7,7 @@ import java.util.Scanner;
  * fileName        : DemoController3.java
  * author          : sungsuhan
  * date            : 2022-01-27
- * desc            :
+ * desc            : 프로그래머 코딩테스트 컨트롤러
  * =============================================
  * DATE              AUTHOR        NOTE
  * =============================================

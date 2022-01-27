@@ -18,14 +18,12 @@ package com.example.han.bmi;
 public class BmiApp {
     public static String BMI = "무조건 정상인 BMI 측정기";
     private String name;
-    private String gender;
     private String height;
     private String weight;
 
-    String info(String name, String gender, String height, String weight) {
+    String info(String name, String height, String weight) {
 
         this.name = name;
-        this.gender = gender;
         this.height = height;
         this.weight = weight;
 

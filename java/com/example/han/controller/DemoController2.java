@@ -7,7 +7,7 @@ import java.util.Scanner;
  * fileName        : DemoController2.java
  * author          : sungsuhan
  * date            : 2022-01-27
- * desc            :
+ * desc            : 기본구조 컨트롤러
  * =============================================
  * DATE              AUTHOR        NOTE
  * =============================================
