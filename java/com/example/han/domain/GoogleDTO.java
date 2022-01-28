@@ -1,4 +1,4 @@
-package com.example.han.google;
+package com.example.han.domain;
 
 /**
  * packageName: com.example.han.google
@@ -15,24 +15,15 @@ package com.example.han.google;
  * ================================
  * 2022-01-25         sungsuhan        최초 생성
  **/
-public class GoogleApp {
+public class GoogleDTO {
     public static String GOOGLE_TITLE = "Google";
     private String search;
 
-    String getGoogle(String search){
-
-        this.search = search;
-
-        String res = "검색 결과는 %s 입니다.";
-
-        return String.format(res, this.search);
-
-
-
-
-
-
-
-
+    public String getSearch() {
+        return search;
     }
+    public void setSearch(String search) {
+        this.search = search;
+    }
+
 }

@@ -34,36 +34,62 @@ public class DemoControllerProject {
                     "11.DFS\t" +
                     "12.BFS"
                     );
+            String res = "";
             switch (scanner.next()) {
                 case "0" :
                     System.out.println("EXIT"); return;
                 case "1" :
-                    System.out.println("Sort"); break;
+                    System.out.println("Sort");
+                   // res = sortDemo.execute();
+                    break;
                 case "2" :
-                    System.out.println("BS"); break;
+                    System.out.println("BS");
+                    //res = bsDemo.execute();
+                    break;
                 case "3" :
-                    System.out.println("BF"); break;
+                    System.out.println("BF");
+                    //res = bfDemo.execute();
+                    break;
                 case "4" :
-                    System.out.println("Stack"); break;
+                    System.out.println("Stack");
+                    //res = stackDemo.execute();
+                    break;
                 case "5" :
-                    System.out.println("Queue"); break;
+                    System.out.println("Queue");
+                    //res = queueDemo.execute();
+                    break;
                 case "6" :
-                    System.out.println("DP"); break;
+                    System.out.println("DP");
+                    //res = dpDemo.execute();
+                    break;
                 case "7" :
-                    System.out.println("Hash"); break;
+                    System.out.println("Hash");
+                    //res = hashDemo.execute();
+                    break;
                 case "8" :
-                    System.out.println("Graph"); break;
+                    System.out.println("Graph");
+                    //res = graphDemo.execute();
+                    break;
                 case "9" :
-                    System.out.println("Greedy"); break;
+                    System.out.println("Greedy");
+                    //res = greedyDemo.execute();
+                    break;
                 case "10" :
-                    System.out.println("Heap"); break;
+                    System.out.println("Heap");
+                    //res = heapDemo.execute();
+                    break;
                 case "11" :
-                    System.out.println("DFS"); break;
+                    System.out.println("DFS");
+                    //res = dfsDemo.execute();
+                    break;
                 case "12" :
-                    System.out.println("BFS"); break;
-                default:
-                    System.out.println("Wrong Number"); break;
+                    System.out.println("BFS");
+                    //res = bfsDemo.execute();
+                    break;
+                default : res =("Wrong Number");
+                    break;
             }
+            System.out.println(res);
         }
     }
 }

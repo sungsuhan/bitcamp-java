@@ -1,4 +1,4 @@
-package com.example.han.bmi;
+package com.example.han.domain;
 
 /**
  * packageName: com.example.han.bmi
@@ -15,20 +15,30 @@ package com.example.han.bmi;
  * ================================
  * 2022-01-25         sungsuhan        최초 생성
  **/
-public class BmiApp {
+public class BmiDTO {
     public static String BMI_TITLE = "무조건 정상인 BMI 측정기";
     private String name;
     private String height;
     private String weight;
 
-    String getBMI(String name, String height, String weight) {
-
-        this.name = name;
-        this.height = height;
-        this.weight = weight;
-
-        return String.format("%s 씨는 BMI 결과 정상입니다.", this.name);
-
-
+    public String getName() {
+        return name;
     }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public String getHeight() {
+        return height;
+    }
+    public void setHeight(String height) {
+        this.height = height;
+    }
+    public String getWeight() {
+        return weight;
+    }
+    public void setWeight(String weight) {
+        this.weight = weight;
+    }
+
+
 }

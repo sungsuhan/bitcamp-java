@@ -1,6 +1,6 @@
-package com.example.han.bmi;
+package com.example.han.service;
 
-import java.util.Scanner;
+import com.example.han.domain.BmiDTO;
 
 /**
  * packageName: com.example.han.bmi
@@ -13,11 +13,10 @@ import java.util.Scanner;
  * ================================
  * 2022-01-25         sungsuhan        최초 생성
  **/
-public class BmiDemo {
-    public String execute(String name, String height, String weight) {
-        BmiApp bmiApp = new BmiApp();
+public class BmiService {
+    public String getBmi(BmiDTO bmi) {
 
-        return bmiApp.getBMI(name, height, weight);
+        return String.format("%s 씨는 BMI 결과 정상입니다.", bmi.getName());
 
     }
 }

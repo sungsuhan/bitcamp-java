@@ -1,4 +1,4 @@
-package com.example.han.login;
+package com.example.han.domain;
 /**
  * packageName: com.example.han.calc
  * fileName        : LoginApp.java
@@ -10,19 +10,38 @@ package com.example.han.login;
  * ================================
  * 2022-01-25         sungsuhan        최초 생성
  */
-public class LoginApp {
+public class LoginDTO {
 
-    public static String LOGIN_APP = "<로그인 창>";
+    public static String LOGIN_TITLE = "<로그인 창>";
     private String id;
     private String pw;
     private String name;
     static String PASSWORD = "abc";
 
-    String getLogin(String id, String pw, String name) {
-
+    public String getId() {
+        return id;
+    }
+    public void setId(String id) {
         this.id = id;
+    }
+    public String getPw() {
+        return pw;
+    }
+    public void setPw(String pw) {
         this.pw = pw;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
         this.name = name;
+    }
+    public String getPASSWORD() {
+        return PASSWORD;
+    }
+    public void setPASSWORD(String PASSWORD) {
+        this.PASSWORD = PASSWORD;
+    }
 
         /*
         if(pw.equals(PASSWORD)){
@@ -38,14 +57,4 @@ public class LoginApp {
             default : res = String.format("%s 님의 ID는 맞고 비번 %s 가 틀립니다, 로그인 실패", this.id, this.pw); break;
         }
          */
-
-        return (pw.equals(PASSWORD)) ? String.format("%s 님의 비번 %s 가 맞습니다, 로그인 성공", this.name, this.pw)
-                : String.format("%s 님의 ID는 맞고 비번 %s 가 틀립니다, 로그인 실패", this.id, this.pw);
-
-
-
-
-
-
-    }
 }
