@@ -17,7 +17,32 @@ public class DemoControllerProject {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-//각 유형 데모 받을곳
+/*
+SortDTO sort = new SortDTO();
+SortService sortService = new SortService();
+BSDTO bs = new BSDTO();
+BSService bsService = new BSService();
+BFDTO bf = new BFDTO();
+BFService bfService = new BFService();
+StackDTO stack = new StackDTO();
+StackService stackService = new StackService();
+QueueDTO queue = new QueueDTO();
+QueueService queueService = new QueueService();
+DPDTO dp = new DPDTO();
+DPService dpService = new DPService();
+HashDTO hash = new HashDTO();
+HashService hashService = new HashService();
+GraphDTO graph = new GraphDTO();
+GraphService graphService = new GraphService();
+GreedyDTO greedy = new GreedyDTO();
+GreedyService greedyService = new GreedyService();
+HeapDTO heap = new HeapDTO();
+HeapService heapService = new HeapService();
+DFSDTO dfs = new DFSDTO();
+DFSService dfsService = new DFSService();
+BFSDTO bfs = new BFSDTO();
+BFSService bfsService = new BFSService();
+ */
 
         while (true) {
             System.out.println("[MENU] 0.EXIT \n" +
