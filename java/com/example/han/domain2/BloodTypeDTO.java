@@ -43,19 +43,4 @@ public class BloodTypeDTO {
         this.bloodtype = bloodtype;
     }
 
-
-
-
-
-
-
-//    public String info(String name, String gender, int age, String bloodtype){
-//
-//        this.name = name;
-//        this.gender = gender;
-//        this.age = age;
-//        this.bloodtype = bloodtype;
-//
-//        return String.format("%s 씨의 혈액형은 %s 입니다", this.name, this.bloodtype);
-//    }
 }

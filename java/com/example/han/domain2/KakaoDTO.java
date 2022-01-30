@@ -18,8 +18,10 @@ package com.example.han.domain2;
 public class KakaoDTO {
 
     public static String KAKAO_APP = "<카카오 번호랑 메시지 입력>";
-    String telno;
-    String message;
+    private String telno;
+    private String message;
+
+
 
     public String kakao(String telno, String message){
 

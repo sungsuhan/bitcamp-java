@@ -14,7 +14,7 @@ import java.util.Scanner;
  * fileName        : DemoController2.java
  * author          : sungsuhan
  * date            : 2022-01-29
- * desc            :
+ * desc            : 복습용 컨트롤러
  * =============================================
  * DATE              AUTHOR        NOTE
  * =============================================
@@ -36,7 +36,7 @@ public class DemoController2 {
                 case "0" :
                     System.out.println("종료"); return;
                 case "1" :
-                    System.out.println(BloodTypeDTO.BT_APP + "\n 이름 입력");
+                    System.out.println(BloodTypeDTO.BT_APP + "\n이름 입력");
                     bloodType.setName(scanner.next());
                     System.out.println("성별 입력");
                     bloodType.setGender(scanner.next());
@@ -44,6 +44,7 @@ public class DemoController2 {
                     bloodType.setAge(scanner.nextInt());
                     System.out.println("혈액형 입력");
                     bloodType.setBloodtype(scanner.next());
+                    System.out.println(bloodTypeService.getBT(bloodType));
                     break;
                 case "2" :
                     System.out.println("카카오앱"); break;

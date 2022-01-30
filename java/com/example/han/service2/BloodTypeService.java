@@ -18,6 +18,6 @@ import java.util.Scanner;
 public class BloodTypeService {
     public String getBT(BloodTypeDTO bloodType) {
 
-        return String.format("%s 씨의 혈액형은 %s 입니다", bloodType.getName(), bloodType.getBloodtype());
+        return String.format("%s 씨는 %d세 %s이며 혈액형은 %s형 입니다", bloodType.getName(), bloodType.getAge(), bloodType.getGender(), bloodType.getBloodtype());
     }
 }
