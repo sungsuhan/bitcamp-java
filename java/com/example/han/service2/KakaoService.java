@@ -1,4 +1,4 @@
-package com.example.han.kakao;
+package com.example.han.service2;
 /**
  * packageName: com.example.han.calc
  * fileName        : KakaoDemo.java
@@ -12,17 +12,17 @@ package com.example.han.kakao;
  */
 
 
-import com.example.han.kakao.KakaoApp;
+import com.example.han.domain2.KakaoDTO;
 
 import java.util.Scanner;
 
-public class KakaoDemo {
+public class KakaoService {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
 
-        KakaoApp kakaoApp = new KakaoApp();
+        KakaoDTO kakaoApp = new KakaoDTO();
 
-        System.out.println(KakaoApp.KAKAO_APP);
+        System.out.println(KakaoDTO.KAKAO_APP);
 
         System.out.println("전화번호 입력");
         System.out.println("메시지 입력");

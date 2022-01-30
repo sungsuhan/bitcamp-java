@@ -1,4 +1,6 @@
-package com.example.han.naver;
+package com.example.han.service2;
+
+import com.example.han.domain2.NaverDTO;
 
 import java.util.Scanner;
 
@@ -13,12 +15,12 @@ import java.util.Scanner;
  * ================================
  * 2022-01-25         sungsuhan        최초 생성
  **/
-public class NaverDemo {
+public class NaverService {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        NaverApp naverApp = new NaverApp();
+        NaverDTO naverApp = new NaverDTO();
 
-        System.out.println(NaverApp.TITLE);
+        System.out.println(NaverDTO.TITLE);
 
         System.out.println("ID");
         String id = scanner.next();
@@ -29,14 +31,6 @@ public class NaverDemo {
         String res = naverApp.naverlogin(id, pw);
 
         System.out.println(res);
-
-
-
-
-
-
-
-
 
     }
 }

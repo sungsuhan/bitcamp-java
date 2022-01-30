@@ -1,4 +1,4 @@
-package com.example.han.naver;
+package com.example.han.domain2;
 
 /**
  * packageName: com.example.han.naver
@@ -15,12 +15,12 @@ package com.example.han.naver;
  * ================================
  * 2022-01-25         sungsuhan        최초 생성
  **/
-public class NaverApp {
+public class NaverDTO {
     public static String TITLE = "NAVER";
     private String id;
     private String pw;
 
-    String naverlogin(String id, String pw){
+    public String naverlogin(String id, String pw){
 
         this.id = id;
         this.pw = pw;

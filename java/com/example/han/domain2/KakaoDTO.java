@@ -1,4 +1,4 @@
-package com.example.han.kakao;
+package com.example.han.domain2;
 /**
  * packageName: com.example.han.calc
  * fileName        : KakaoApp.java
@@ -15,7 +15,7 @@ package com.example.han.kakao;
  * 전화번호 String telno, String message
  **/
 
-public class KakaoApp {
+public class KakaoDTO {
 
     public static String KAKAO_APP = "<카카오 번호랑 메시지 입력>";
     String telno;
