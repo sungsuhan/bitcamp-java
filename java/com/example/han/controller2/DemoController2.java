@@ -32,6 +32,7 @@ public class DemoController2 {
 
         while (true) {
             System.out.println("[메뉴]\n" + "0.종료 1.혈액형앱 2.카카오앱 3.네이버앱");
+            String res = "";
             switch (scanner.next()) {
                 case "0" :
                     System.out.println("종료"); return;
@@ -44,15 +45,27 @@ public class DemoController2 {
                     bloodType.setAge(scanner.nextInt());
                     System.out.println("혈액형 입력");
                     bloodType.setBloodtype(scanner.next());
-                    System.out.println(bloodTypeService.getBT(bloodType));
+                    res = bloodTypeService.execute(bloodType);
                     break;
                 case "2" :
-                    System.out.println("카카오앱"); break;
+                    System.out.println(KakaoDTO.KAKAO_APP + "\n전화번호 입력");
+                    kakao.setTelno(scanner.next());
+                    System.out.println("메시지 입력");
+                    kakao.setMessage(scanner.next());
+                    res = kakaoService.execute(kakao);
+                    break;
                 case "3" :
-                    System.out.println("네이버앱"); break;
+                    System.out.println(NaverDTO.NAVER_APP + "\nID 입력");
+                    naver.setId(scanner.next());
+                    System.out.println("PW 입력");
+                    naver.setPw(scanner.next());
+                    res = naverService.execute(naver);
+                    break;
                 default :
-                    System.out.println("1~3 입력"); break;
+                    res = "1~3 입력";
+                    break;
             }
+            System.out.println(res);
         }
     }
 }

@@ -16,21 +16,11 @@ import java.util.Scanner;
  * 2022-01-25         sungsuhan        최초 생성
  **/
 public class NaverService {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        NaverDTO naverApp = new NaverDTO();
+    public String execute(NaverDTO naver) {
 
-        System.out.println(NaverDTO.TITLE);
+        String res = "ID : %s 사용자 로그인 성공";
 
-        System.out.println("ID");
-        String id = scanner.next();
-
-        System.out.println("PW");
-        String pw = scanner.next();
-
-        String res = naverApp.naverlogin(id, pw);
-
-        System.out.println(res);
+        return String.format(res, naver.getId());
 
     }
 }

@@ -17,24 +17,9 @@ import com.example.han.domain2.KakaoDTO;
 import java.util.Scanner;
 
 public class KakaoService {
-    public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
+    public String execute(KakaoDTO kakao) {
 
-        KakaoDTO kakaoApp = new KakaoDTO();
-
-        System.out.println(KakaoDTO.KAKAO_APP);
-
-        System.out.println("전화번호 입력");
-        System.out.println("메시지 입력");
-
-        String telno = scanner.next();
-        String message = scanner.next();
-
-        System.out.println("전송 완료");
-
-        String res = kakaoApp.kakao(telno, message);
-
-        System.out.println(res);
+        return String.format("전화번호는 %s 이고 메시지는 %s 입니다", kakao.getTelno(), kakao.getMessage());
 
     }
 }

@@ -16,23 +16,21 @@ package com.example.han.domain2;
  * 2022-01-25         sungsuhan        최초 생성
  **/
 public class NaverDTO {
-    public static String TITLE = "NAVER";
+    public static String NAVER_APP = "NAVER";
     private String id;
     private String pw;
 
-    public String naverlogin(String id, String pw){
-
-        this.id = id;
-        this.pw = pw;
-
-        String res = "%s인 사용자 로그인 성공";
-
-        return String.format(res,this.id);
-
-
-
-
-
-
+    public String getId() {
+        return getId();
     }
+    public void setId(String id) {
+        this.id = id;
+    }
+    public String getPw() {
+        return  getPw();
+    }
+    public void setPw(String pw) {
+        this.pw = pw;
+    }
+
 }

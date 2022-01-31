@@ -12,7 +12,7 @@ package com.example.han.domain2;
  * 2022-01-25         sungsuhan        최초 생성
  **/
 public class BloodTypeDTO {
-    public static String BT_APP = "당신의 혈액형을 알려주세요";
+    public static String BT_APP = "혈액형 앱";
     private String name;
     private String gender;
     private int age;
