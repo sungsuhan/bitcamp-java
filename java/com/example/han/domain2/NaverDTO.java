@@ -21,13 +21,13 @@ public class NaverDTO {
     private String pw;
 
     public String getId() {
-        return getId();
+        return id;
     }
     public void setId(String id) {
         this.id = id;
     }
     public String getPw() {
-        return  getPw();
+        return  pw;
     }
     public void setPw(String pw) {
         this.pw = pw;

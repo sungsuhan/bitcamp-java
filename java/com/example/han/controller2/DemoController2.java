@@ -73,7 +73,7 @@ public class DemoController2 {
                     res = gugudanService.execute(gugudan);
                     break;
                 default :
-                    res = "1~3 입력";
+                    res = "1~4 입력";
                     break;
             }
             System.out.println(res);
