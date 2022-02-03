@@ -28,7 +28,7 @@ public class TempController {
 
 
         for (int i=0; i<oneNames.length; i++) {
-            System.out.println(oneNames[i] + " : " + oneSubjects[i] + " " + oneSubjects[i+4] + " " + oneSubjects[i+8]);
+            System.out.println(oneNames[i] + " : " + oneSubjects[i] + " / " + oneSubjects[i+4] + " / " + oneSubjects[i+8]);
         }
 
 
