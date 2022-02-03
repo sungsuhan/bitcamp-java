@@ -66,19 +66,19 @@ public class DemoController {
                     bmi.setName(scanner.next());
                     bmi.setHeight(scanner.next());
                     bmi.setWeight(scanner.next());
-                    res = bmiService.getBmi(bmi);
+                    res = bmiService.execute(bmi);
                     break;
                 case "2" :
                     System.out.println(CalcDTO.CALC_TITLE + "\n숫자1, 연산자, 숫자2 입력");
                     calc.setNum1(scanner.nextInt());
                     calc.setOpcode(scanner.next());
                     calc.setNum2(scanner.nextInt());
-                    res = calcService.getCalc(calc);
+                    res = calcService.execute(calc);
                     break;
                 case "3" :
                     System.out.println(GoogleDTO.GOOGLE_TITLE + "\n[Google 검색 또는 URL 입력]");
                     google.setSearch(scanner.next());
-                    res = googleService.getGoogle(google);
+                    res = googleService.execute(google);
                     break;
                 case "4" :
                     System.out.println(GradeDTO.GRADE_TITLE + "\n이름, 국어점수, 영어점수, 수학점수 입력");
@@ -86,14 +86,14 @@ public class DemoController {
                     grade.setKor(scanner.nextInt());
                     grade.setEng(scanner.nextInt());
                     grade.setMath(scanner.nextInt());
-                    res = gradeService.getGrade(grade);
+                    res = gradeService.execute(grade);
                     break;
                 case "5" :
                     System.out.println(LoginDTO.LOGIN_TITLE + "\nID, PW, 이름 입력");
                     login.setId(scanner.next());
                     login.setPw(scanner.next());
                     login.setName(scanner.next());
-                    res = loginService.getLogin(login);
+                    res = loginService.execute(login);
                     break;
                 default  : res = "1~5만 누르세요";
                     break;

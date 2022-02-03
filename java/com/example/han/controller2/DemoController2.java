@@ -1,9 +1,11 @@
 package com.example.han.controller2;
 
 import com.example.han.domain2.BloodTypeDTO;
+import com.example.han.domain2.GugudanDTO;
 import com.example.han.domain2.KakaoDTO;
 import com.example.han.domain2.NaverDTO;
 import com.example.han.service2.BloodTypeService;
+import com.example.han.service2.GugudanService;
 import com.example.han.service2.KakaoService;
 import com.example.han.service2.NaverService;
 
@@ -29,9 +31,11 @@ public class DemoController2 {
         KakaoService kakaoService = new KakaoService();
         NaverDTO naver = new NaverDTO();
         NaverService naverService = new NaverService();
+        GugudanDTO gugudan = new GugudanDTO();
+        GugudanService gugudanService = new GugudanService();
 
         while (true) {
-            System.out.println("[메뉴]\n" + "0.종료 1.혈액형앱 2.카카오앱 3.네이버앱");
+            System.out.println("[메뉴]\n" + "0.종료 1.혈액형앱 2.카카오앱 3.네이버앱 4.구구단앱");
             String res = "";
             switch (scanner.next()) {
                 case "0" :
@@ -60,6 +64,13 @@ public class DemoController2 {
                     System.out.println("PW 입력");
                     naver.setPw(scanner.next());
                     res = naverService.execute(naver);
+                    break;
+                case "4" :
+                    System.out.println(GugudanDTO.GUGUDAN_APP + "\n2~9단 입력");
+                    gugudan.setDan(scanner.nextInt());
+                    System.out.println("곱하는 수 입력");
+                    gugudan.setSu(scanner.nextInt());
+                    res = gugudanService.execute(gugudan);
                     break;
                 default :
                     res = "1~3 입력";

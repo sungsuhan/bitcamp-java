@@ -14,7 +14,7 @@ import com.example.han.domain.GradeDTO;
  * 2022-01-26         sungsuhan        최초 생성
  **/
 public class GradeService {
-    public String getGrade(GradeDTO grade) {
+    public String execute(GradeDTO grade) {
 
         int total = grade.getKor() + grade.getEng() + grade.getMath();
         int avg = total / 3;

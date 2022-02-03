@@ -15,7 +15,7 @@ import com.example.han.domain.CalcDTO;
  **/
 
 public class CalcService {
-    public String getCalc(CalcDTO calc){
+    public String execute(CalcDTO calc){
 
         int res = 0;
 

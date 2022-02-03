@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * packageName: com.example.han.controller
- * fileName        : DemoController3.java
+ * fileName        : DemoControllerProject.java
  * author          : sungsuhan
  * date            : 2022-01-27
  * desc            : 프로그래머스 코딩테스트 컨트롤러
@@ -65,51 +65,51 @@ BFSService bfsService = new BFSService();
                     System.out.println("EXIT"); return;
                 case "1" :
                     System.out.println("Sort");
-                   // res = sortDemo.execute();
+                   // res = sortService.execute();
                     break;
                 case "2" :
                     System.out.println("BS");
-                    //res = bsDemo.execute();
+                    //res = bsService.execute();
                     break;
                 case "3" :
                     System.out.println("BF");
-                    //res = bfDemo.execute();
+                    //res = bfService.execute();
                     break;
                 case "4" :
                     System.out.println("Stack");
-                    //res = stackDemo.execute();
+                    //res = stackService.execute();
                     break;
                 case "5" :
                     System.out.println("Queue");
-                    //res = queueDemo.execute();
+                    //res = queueService.execute();
                     break;
                 case "6" :
                     System.out.println("DP");
-                    //res = dpDemo.execute();
+                    //res = dpService.execute();
                     break;
                 case "7" :
                     System.out.println("Hash");
-                    //res = hashDemo.execute();
+                    //res = hashService.execute();
                     break;
                 case "8" :
                     System.out.println("Graph");
-                    //res = graphDemo.execute();
+                    //res = graphService.execute();
                     break;
                 case "9" :
                     System.out.println("Greedy");
-                    //res = greedyDemo.execute();
+                    //res = greedyService.execute();
                     break;
                 case "10" :
                     System.out.println("Heap");
-                    //res = heapDemo.execute();
+                    //res = heapService.execute();
                     break;
                 case "11" :
                     System.out.println("DFS");
-                    //res = dfsDemo.execute();
+                    //res = dfsService.execute();
                     break;
                 case "12" :
                     System.out.println("BFS");
-                    //res = bfsDemo.execute();
+                    //res = bfsService.execute();
                     break;
                 default : res =("Wrong Number");
                     break;

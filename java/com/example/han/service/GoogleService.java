@@ -14,9 +14,9 @@ import com.example.han.domain.GoogleDTO;
  * 2022-01-25         sungsuhan        최초 생성
  **/
 public class GoogleService {
-    public String getGoogle(GoogleDTO search) {
+    public String execute(GoogleDTO search) {
 
-        return String.format(search.getSearch());
+        return String.format("검색결과 : %s", search.getSearch());
 
     }
 }
