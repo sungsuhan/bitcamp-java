@@ -32,9 +32,14 @@ public class ArrayExam {
 
         System.out.println("Q2. 팀장이 맡은 과제만 출력하세요. 예) 김진영, 힙, 그래프 ");
         String s = "";
-        s += arr[2] + " " + arr[7] + " " + arr[12];
+        for (int i=0; i<arr.length; i++) {
+            if (arr[i].equals("권혜민")) {
+                for (int j=0; j<4; j++) {
+                    s += arr[i + j*5];
+                }
+            }
+        }
         System.out.println(s);
-
 //        System.out.println("Q3. 큐를 담당한 사람을 출력하세요. 예) 큐를 담당한 사람: 권혜민 ");
 
 
