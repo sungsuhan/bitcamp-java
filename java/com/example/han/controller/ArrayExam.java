@@ -25,26 +25,30 @@ public class ArrayExam {
 //            if (i%5==0) {
 //                s += "\n";
 //            }
-//            s += arr[i] + "\t";
+//            s += i + "." + arr[i] +"\t";
 //        }
 //        System.out.println(s);
 
 
-        System.out.println("Q2. 팀장이 맡은 과제만 출력하세요. 예) 김진영, 힙, 그래프 ");
+//        System.out.println("Q2. 팀장이 맡은 과제만 출력하세요. 예) 김진영, 힙, 그래프 ");
+//          String s = "";
+//          for (int i=0; i<arr.length; i++) {
+//              if (arr[i].equals("김진영")) {
+//                for (int j=0; j<4; j++) {
+//                    s += arr[i + j*5] + "\t";
+//                }
+//              }
+//          }
+//        System.out.println(s);
+
+//        System.out.println("Q3. 큐를 담당한 사람을 출력하세요. 예) 큐를 담당한 사람: 권혜민 ");
         String s = "";
         for (int i=0; i<arr.length; i++) {
-            if (arr[i].equals("권혜민")) {
-                for (int j=0; j<4; j++) {
-                    s += arr[i + j*5];
-                }
+            if (arr[i].equals("Hash")) {
+                s += arr[i%5];
             }
         }
         System.out.println(s);
-//        System.out.println("Q3. 큐를 담당한 사람을 출력하세요. 예) 큐를 담당한 사람: 권혜민 ");
-
-
-
-
 
 
 
