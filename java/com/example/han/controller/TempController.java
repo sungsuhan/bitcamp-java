@@ -40,11 +40,11 @@ public class TempController {
 //        System.out.println("Q2.팀장이 맡은 과제만 출력하세요"); //예) 김윤섭 : Stack, Queue, DP
 //        String s = "";
 //        for (int i=0; i<arr.length; i++) {
-//            if (arr[i].equals("김윤섭")) {
-//                for (int j=0; j<4; j++) {
+//            if (arr[i].equals("최민서")) {
+//                for (int j=0; j<3; j++) {
 //                    s += arr[i + j*5] + "\t";
-//                    if (i==17) {break;}
 //                }
+//                    if (i==17) {break;}
 //            }
 //        }
 //        System.out.println(s);
@@ -53,7 +53,7 @@ public class TempController {
 //        System.out.println("Q3.선택한 과목의 사람을 구하세요"); //예) 큐를 담당한 사람 : 김윤섭
 //        String s = "";
 //        for (int i=0; i<arr.length; i++) {
-//            if (arr[i].equals("Hash")) {
+//            if (arr[i].equals("Queue")) {
 //                s += arr[i%5];
 //            }
 //        }
