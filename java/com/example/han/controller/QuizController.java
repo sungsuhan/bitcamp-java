@@ -19,7 +19,6 @@ import java.util.Scanner;
 public class QuizController {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         QuizService service = new QuizServiceImpl();
 
         String[] arr = {"김승현", "김윤섭", "최민서", "한성수", "김태욱",

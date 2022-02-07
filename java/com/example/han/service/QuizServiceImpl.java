@@ -56,34 +56,25 @@ public class QuizServiceImpl implements QuizService{
     @Override
     public void quiz4(String[] arr) {
         System.out.println("Q4.팀원별 과제 수를 출력하세요"); //예) 김승현(3개) 김윤섭(3개) 최민서(2개) 한성수(2개) 김태욱(2개)
-        int count = 0;
-        String countManager = "";
-        int count0 = 0;
-        int count1 = 0;
-        int count2 = 0;
-        int count3 = 0;
-        int count4 = 0;
-        for (int i = 0; i< arr.length; i++) {
-            if (arr[i].equals(arr[5])) {
-                count0++;
-            }
-            if (arr[i].equals(arr[6])) {
-                count1++;
-            }
-            if (arr[i].equals(arr[7])) {
-                count2++;
-            }
-            if (arr[i].equals(arr[8])) {
-                count3++;
-            }
-            if (arr[i].equals(arr[9])) {
-                count4++;
+
+        String s = "";
+        int[] intArr = new int[5];
+        int[] resArr = new int[5];
+
+        for (int i=5; i<arr.length; i++) {
+            int a = i%5;
+            for (int j=0; j<5; j++) {
+                if (a==j) {
+                    intArr[j]++;
+                }
+                resArr = intArr;
             }
         }
-        System.out.println(arr[0] + "의 카운트는 " + count0);
-        System.out.println(arr[1] + "의 카운트는 " + count1);
-        System.out.println(arr[2] + "의 카운트는 " + count2);
-        System.out.println(arr[3] + "의 카운트는 " + count3);
-        System.out.println(arr[4] + "의 카운트는 " + count4);
+        for(int i = 0; i< 5; i++){
+            System.out.println(arr[i]+"("+resArr[i]+"개)");
+        }
+
+
+
     }
 }
