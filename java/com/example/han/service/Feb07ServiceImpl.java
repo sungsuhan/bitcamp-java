@@ -8,7 +8,7 @@ import java.util.Scanner;
  * author          : sungsuhan
  * date            : 2022-02-07
  * desc            :
- * // (int)Math.random() 랜덤수
+ * // (int)Math.random()*최댓값 +최솟값  => 최대최소 사이 랜덤수
  * =============================================
  * DATE              AUTHOR        NOTE
  * =============================================
@@ -19,7 +19,7 @@ public class Feb07ServiceImpl implements Feb07Service {
     public void dice(Scanner scanner) {
 
         String s = "";
-        int num = (int) (Math.random() * 6) + 1;
+        int num = (int) (Math.random()*6 +1);
         switch (num) {
             case 1:
                 s = "1";
@@ -83,7 +83,7 @@ public class Feb07ServiceImpl implements Feb07Service {
 
     @Override
     public void updown(Scanner scanner) {
-        int answer = (int) (Math.random() * 100) + 1; //1~100까지 랜덤 자연수
+        int answer = (int) (Math.random()*100 +1);
         int input;
 
         while (true) {
