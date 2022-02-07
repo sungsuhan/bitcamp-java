@@ -1,7 +1,5 @@
 package com.example.han.controller;
 
-import org.yaml.snakeyaml.emitter.ScalarAnalysis;
-
 import java.util.Scanner;
 
 /**

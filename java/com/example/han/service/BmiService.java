@@ -14,7 +14,7 @@ import com.example.han.domain.BmiDTO;
  * 2022-01-25         sungsuhan        최초 생성
  **/
 public class BmiService {
-    public String execute(BmiDTO bmi) {
+    public String bmi(BmiDTO bmi) {
 
         return String.format("%s 씨는 BMI 결과 정상입니다.", bmi.getName());
 
