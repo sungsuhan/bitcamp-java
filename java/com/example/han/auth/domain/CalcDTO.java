@@ -1,4 +1,4 @@
-package com.example.han.member.domain;
+package com.example.han.auth.domain;
 /**
  * packageName: com.example.han.calc
  * fileName        : CalcApp.java

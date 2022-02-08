@@ -1,6 +1,6 @@
-package com.example.han.member.service;
+package com.example.han.auth.service;
 
-import com.example.han.member.domain.*;
+import com.example.han.auth.domain.*;
 
 /**
  * packageName: com.example.han.service

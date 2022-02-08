@@ -1,7 +1,8 @@
 package com.example.han;
 
-import com.example.han.member.controller.MemberController;
-import com.example.han.phone.controller.PhoneController;
+import com.example.han.algorithm.controller.AlgoController;
+import com.example.han.auth.controller.MemberController;
+import com.example.han.oop.controller.PhoneController;
 import com.example.han.quiz.controller.QuizController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,10 +19,11 @@ public class HanApplication {
 		PhoneController phoneController = new PhoneController();
 		MemberController memberController = new MemberController();
 		QuizController quizController = new QuizController();
+		AlgoController algoController = new AlgoController();
 
 
 		while (true) {
-			System.out.println("Menu : 0.Exit 1.Auth 2.OOP 3.Quiz 4.Algorithm");
+			System.out.println("Main Menu : 0.Exit 1.Auth 2.OOP 3.Quiz 4.Algorithm");
 			switch (scanner.next()) {
 				case "0" :
 					System.out.println("Exit"); return;
@@ -38,7 +40,9 @@ public class HanApplication {
 					quizController.execute(scanner);
 					break;
 				case "4" :
-					System.out.println("Algorithm"); break;
+					System.out.println("Algorithm");
+					algoController.execute(scanner);
+					break;
 				default:
 					System.out.println("Wrong Number"); break;
 			}

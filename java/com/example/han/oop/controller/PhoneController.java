@@ -1,7 +1,7 @@
-package com.example.han.phone.controller;
+package com.example.han.oop.controller;
 
-import com.example.han.phone.service.PhoneService;
-import com.example.han.phone.service.PhoneServiceImpl;
+import com.example.han.oop.service.PhoneService;
+import com.example.han.oop.service.PhoneServiceImpl;
 
 import java.util.Scanner;
 

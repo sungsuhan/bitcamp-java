@@ -1,12 +1,12 @@
-package com.example.han.member.controller;
+package com.example.han.auth.controller;
 
-import com.example.han.member.domain.BmiDTO;
-import com.example.han.member.domain.CalcDTO;
-import com.example.han.member.domain.GoogleDTO;
-import com.example.han.member.domain.GradeDTO;
-import com.example.han.member.domain.LoginDTO;
-import com.example.han.member.service.MemberService;
-import com.example.han.member.service.MemberServiceImpl;
+import com.example.han.auth.domain.BmiDTO;
+import com.example.han.auth.domain.CalcDTO;
+import com.example.han.auth.domain.GoogleDTO;
+import com.example.han.auth.domain.GradeDTO;
+import com.example.han.auth.domain.LoginDTO;
+import com.example.han.auth.service.MemberService;
+import com.example.han.auth.service.MemberServiceImpl;
 
 import java.util.Scanner;
 
