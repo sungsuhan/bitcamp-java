@@ -1,5 +1,10 @@
 package com.example.han.oop.service;
 
+import com.example.han.oop.domain.CelPhone;
+import com.example.han.oop.domain.GalPhone;
+import com.example.han.oop.domain.IPhone;
+import com.example.han.oop.domain.Phone;
+
 import java.util.Scanner;
 
 /**
@@ -16,21 +21,31 @@ import java.util.Scanner;
 public class PhoneServiceImpl implements PhoneService {
     @Override
     public void phone(Scanner scanner) {
-        System.out.println("집번호 : 02-3473-2890");
+        Phone phone = new Phone();
+        phone.call();
     }
 
     @Override
     public void celphone(Scanner scanner) {
-        System.out.println("핸드폰번호 : 010-3375-2890");
+        CelPhone phone = new CelPhone();
+        phone.call();
+        phone.wireless();
     }
 
     @Override
     public void iphone(Scanner scanner) {
-        System.out.println("아이폰 유저");
+        IPhone phone = new IPhone();
+        phone.call();
+        phone.wireless();
+        phone.internet();
     }
 
     @Override
     public void galphone(Scanner scanner) {
-        System.out.println("갤럭시노트 유저");
+        GalPhone phone = new GalPhone();
+        phone.call();
+        phone.wireless();
+        phone.internet();
+        phone.pay();
     }
 }

@@ -134,7 +134,6 @@ public class Feb08ServiceImpl implements Feb08Service {
 //         int a = (int) (Math.random() * 9 + 1);
 //         int b = (int) (Math.random() * 9 + 1);
 //         int res = a * b;
-//
 //         System.out.println(a + " X " + b + " = ?");
 //         int input = scanner.nextInt();
 //         System.out.println((input == res) ? "정답입니다." : "오답입니다.");
