@@ -2,7 +2,7 @@ package com.example.han;
 
 import com.example.han.algorithm.controller.AlgoController;
 import com.example.han.auth.controller.MemberController;
-import com.example.han.oop.controller.PhoneController;
+import com.example.han.oop.controller.OOPController;
 import com.example.han.quiz.controller.QuizController;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,7 +16,7 @@ public class HanApplication {
 		SpringApplication.run(HanApplication.class, args);
 
 		Scanner scanner = new Scanner(System.in);
-		PhoneController phoneController = new PhoneController();
+		OOPController oopController = new OOPController();
 		MemberController memberController = new MemberController();
 		QuizController quizController = new QuizController();
 		AlgoController algoController = new AlgoController();
@@ -33,7 +33,7 @@ public class HanApplication {
 					break;
 				case "2" :
 					System.out.println("OOP");
-					phoneController.execute(scanner);
+					oopController.execute(scanner);
 					break;
 				case "3" :
 					System.out.println("Quiz");

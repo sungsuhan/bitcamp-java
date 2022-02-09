@@ -20,32 +20,22 @@ import java.util.Scanner;
  **/
 public class PhoneServiceImpl implements PhoneService {
     @Override
-    public void phone(Scanner scanner) {
-        Phone phone = new Phone();
-        phone.call();
+    public void usePhone(Phone phone) {
+        System.out.println(phone.toString());
     }
 
     @Override
-    public void celphone(Scanner scanner) {
-        CelPhone phone = new CelPhone();
-        phone.call();
-        phone.wireless();
+    public void useCelPhone(CelPhone phone) {
+        System.out.println(phone.toString());
     }
 
     @Override
-    public void iphone(Scanner scanner) {
-        IPhone phone = new IPhone();
-        phone.call();
-        phone.wireless();
-        phone.internet();
+    public void useIPhone(IPhone phone) {
+        System.out.println(phone.toString());
     }
 
     @Override
-    public void galphone(Scanner scanner) {
-        GalPhone phone = new GalPhone();
-        phone.call();
-        phone.wireless();
-        phone.internet();
-        phone.pay();
+    public void useGalPhone(GalPhone phone) {
+        System.out.println(phone.toString());
     }
 }
