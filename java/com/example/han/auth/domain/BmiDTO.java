@@ -15,7 +15,11 @@ package com.example.han.auth.domain;
  * ================================
  * 2022-01-25         sungsuhan        최초 생성
  **/
-public class BmiDTO extends Object {
+public class BmiDTO {
+    private final static BmiDTO bmiDTO = new BmiDTO();
+    private BmiDTO(){}
+    public static BmiDTO getInstance() {return bmiDTO;}
+
     public static String BMI_TITLE = "BMI 측정기";
     private String name;
     private double height;

@@ -33,7 +33,7 @@ public class OOPController {
                     System.out.println("POJO가 은닉화다"); break;
                 case "2" :
                     System.out.println("extends가 상속이다");
-                    Phone phone = new Phone("금성전화기", "금성전자");
+                    Phone phone = new Phone("금성 전화기", "금성 전자");
                     CelPhone celphone = new CelPhone("블랙베리", "옛날 핸드폰", "이동중에");
                     IPhone iphone = new IPhone("애플");
                     GalPhone galphone = new GalPhone("삼성");
@@ -68,19 +68,6 @@ public class OOPController {
                     System.out.println("1~4 입력"); break;
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

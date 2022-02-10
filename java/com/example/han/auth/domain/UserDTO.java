@@ -10,7 +10,10 @@ package com.example.han.auth.domain;
  * ================================
  * 2022-01-25         sungsuhan        최초 생성
  */
-public class LoginDTO {
+public class UserDTO {
+    private final static UserDTO userDTO = new UserDTO();
+    private UserDTO() {}
+    public static UserDTO getInstance() {return userDTO;}
 
     public static String LOGIN_TITLE = "<로그인 창>";
     private String id;

@@ -39,6 +39,6 @@ public class Phone {
 
     @Override
     public String toString() {
-        return String.format("%s에서 만든 %s 를 이용하여 %s 라고 통화를 한다",company,kind, call);
+        return String.format("%s에서 만든 %s 를 이용하여 %s 라고 통화를 한다", company, kind, call);
     }
 }

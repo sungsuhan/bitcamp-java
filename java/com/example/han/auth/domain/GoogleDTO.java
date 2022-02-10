@@ -16,6 +16,10 @@ package com.example.han.auth.domain;
  * 2022-01-25         sungsuhan        최초 생성
  **/
 public class GoogleDTO {
+    private final static GoogleDTO googleDTO = new GoogleDTO();
+    private GoogleDTO(){}
+    public static GoogleDTO getInstance() {return googleDTO;}
+
     public static String GOOGLE_TITLE = "Google";
     private String search;
 

@@ -18,5 +18,5 @@ public interface MemberService {
     String calc(CalcDTO calc);
     String search(GoogleDTO search);
     String getGrade(GradeDTO grade);
-    String login(LoginDTO login);
+    String login(UserDTO login);
 }

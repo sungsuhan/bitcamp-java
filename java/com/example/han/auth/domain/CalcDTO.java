@@ -1,4 +1,9 @@
 package com.example.han.auth.domain;
+
+import com.example.han.oop.domain.CelPhone;
+import com.example.han.oop.domain.IPhone;
+import com.example.han.oop.domain.Phone;
+
 /**
  * packageName: com.example.han.calc
  * fileName        : CalcApp.java
@@ -12,8 +17,11 @@ package com.example.han.auth.domain;
  **/
 
 public class CalcDTO {
+    private final static CalcDTO calDTO = new CalcDTO();
+    private CalcDTO(){}
+    public static CalcDTO getInstance() {return calDTO;}
 
-    public static String CALC_TITLE = "<계산기>";
+    public final static String CALC_TITLE = "<계산기>";
     private int num1;
     private String opcode;
     private int num2;
@@ -47,5 +55,4 @@ public class CalcDTO {
             res = this.num1 / this.num2;
         }
         */
-
 }

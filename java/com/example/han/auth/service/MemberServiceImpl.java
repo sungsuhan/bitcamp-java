@@ -14,6 +14,8 @@ import com.example.han.auth.domain.*;
  * 2022-02-07         sungsuhan        최초 생성
  **/
 public class MemberServiceImpl implements MemberService {
+
+
     /**
      * BMI = w / t*t  -> 키 m로 바꿀려면 x10000
      * 고도 비만 : 35 이상
@@ -88,7 +90,7 @@ public class MemberServiceImpl implements MemberService {
     }
 
     @Override
-    public String login(LoginDTO login) {
+    public String login(UserDTO login) {
         return (login.getPw().equals(login.getPASSWORD())) ? String.format("%s 님의 비번 %s 가 맞습니다, 로그인 성공", login.getName(), login.getPw())
                 : String.format("%s 님의 ID는 맞고 비번 %s 가 틀립니다, 로그인 실패", login.getName(), login.getPw());
 

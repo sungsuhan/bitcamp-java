@@ -30,6 +30,9 @@ package com.example.han.auth.domain;
  * 2022-01-26         sungsuhan        최초 생성
  **/
 public class GradeDTO {
+    private final static GradeDTO gradeDTO = new GradeDTO();
+    private GradeDTO() {}
+    public static GradeDTO getInstance() {return gradeDTO;}
 
     public static String GRADE_TITLE = "성적표";
     private String name;
