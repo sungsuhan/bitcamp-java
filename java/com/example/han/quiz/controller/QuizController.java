@@ -20,9 +20,10 @@ public class QuizController {
         Feb06Service feb06Service = new Feb06ServiceImpl();
         Feb07Service feb07Service = new Feb07ServiceImpl();
         Feb08Service feb08Service = new Feb08ServiceImpl();
+        Feb10Service feb10Service = new Feb10ServiceImpl();
 
         while (true) {
-            System.out.println("Sub Menu : 0.Exit 1.Feb06 2.Feb07 3.Feb08");
+            System.out.println("Sub Menu : 0.Exit 1.Feb06 2.Feb07 3.Feb08 4.Feb10");
             switch (scanner.next()) {
                 case "0" :
                     System.out.println("Exit"); return;
@@ -105,6 +106,39 @@ public class QuizController {
                         case "5" :
                             System.out.println("구구단");
                             feb08Service.gugudan(scanner);
+                            break;
+                        default:
+                            System.out.println("1~5 사이 입력"); break;
+                    }
+                    break;
+                case "4" :
+                    System.out.println("서브 메뉴 : 0.종료 1.정렬문제(1) 2.정렬문제(2) 3.마방진 4.지그재그 5.별찍기");
+                    switch (scanner.next()) {
+                        case "0" :
+                            System.out.println("종료"); return;
+                        case "1" :
+                            System.out.println("정렬문제(1)");
+                            feb10Service.bubbleSort(scanner);
+                            feb10Service.insertionSort(scanner);
+                            feb10Service.selectionSort(scanner);
+                            break;
+                        case "2" :
+                            System.out.println("정렬문제(2)");
+                            feb10Service.quickSort(scanner);
+                            feb10Service.mergeSort(scanner);
+                            break;
+                        case "3" :
+                            System.out.println("마방진");
+                            feb10Service.magicSquare(scanner);
+                            break;
+                        case "4" :
+                            System.out.println("지그재그");
+                            feb10Service.zigzag(scanner);
+                            break;
+                        case "5" :
+                            System.out.println("별찍기");
+                            feb10Service.rectangleStarPrint(scanner);
+                            feb10Service.triangleStarPrint(scanner);
                             break;
                         default:
                             System.out.println("1~5 사이 입력"); break;
