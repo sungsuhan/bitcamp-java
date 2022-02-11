@@ -82,7 +82,19 @@ public class Feb07ServiceImpl implements Feb07Service {
         System.out.println(res);
     }
 
-
+    /**
+     * author : sungsuhan
+     * des :
+     * Math.random()*최대값 + 최소값 => 최대값 최소값 사이의 랜덤수를 만든다 => int answer
+     * int input => 넣는값 변수 생성
+     * while 무한 loop 생성
+     * input에 입력스캐너 달아준다
+     * 만약 랜덤값이 입력값 보다 크다면 Up 출력
+     * 그게 아니고 랜덤값이 입력값 보다 작다면 Down 출력
+     * 둘 다 아니면 정답 출력
+     *
+     * 출처 : https://pridiot.tistory.com/36
+     **/
     @Override
     public void updown(Scanner scanner) {
         int answer = (int) (Math.random()*100 +1);

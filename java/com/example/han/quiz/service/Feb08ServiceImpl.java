@@ -97,6 +97,26 @@ public class Feb08ServiceImpl implements Feb08Service {
 
     }
 
+    /**
+     * author : sungsuhan
+     * des :
+     * money 디폴트 값으로 생성
+     * name, pw 차례대로 입력스캐너 생성
+     * while 무한 loop 생성
+     * 입력값 input 입력스캐너 생성
+     * switch 조건문에서 input이 0 이면 종료 출력후 return 때문에 완전 밖으로 나온다
+     * input이 1이면 입금 출력 후 money 입력스캐너 생성
+     * money += scanner.nextInt(); == money = money + scanner.nextInt();
+     * break; 때문에 다시 메뉴로 올라감
+     * input이 2이면 출금 출력 후 money 입력스캐너 생성
+     * money -= scanner.nextInt(); == money = money - scanner.nextInt();
+     * break; 때문에 다시 메뉴로 올라감
+     * input이 3이면 앞에 출력했던 name 과 money를 불러온 후 출력
+     * break; 때문에 다시 메뉴로 올라감
+     * 입력값이 0,1,2,3 모두 아니면 0~3입력 출력 후 다시 메뉴로 올라감
+     *
+     * 출처 : https://dw-forensic.tistory.com/entry/2%ED%9A%8C%EC%B0%A8-%EC%9E%90%EB%B0%94%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%EC%9C%BC%EB%A1%9C-%EC%9D%80%ED%96%89%EC%9E%85%EC%B6%9C%EA%B8%88%EB%A7%8C%EB%93%A4%EA%B8%B0
+     **/
     @Override
     public void bank(Scanner scanner) {
         int money = 0;
