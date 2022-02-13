@@ -46,7 +46,11 @@ public class Feb07ServiceImpl implements Feb07Service {
     }
 
 
-
+    /**
+     * author : 최민서
+     * des : 소수가 1을 제외하고 자기자신만을 약수로 가지고 있음을 생각하고 코드 짜기
+     * 약수가 하나인 경우를 찾아 출력
+     */
     @Override
     public void prime(Scanner scanner) {
         System.out.println("두 수를 입력하시오.");
