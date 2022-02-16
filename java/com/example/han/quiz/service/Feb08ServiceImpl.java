@@ -155,10 +155,10 @@ public class Feb08ServiceImpl implements Feb08Service {
      */
     @Override
     public void gugudan(Scanner scanner) {
-        for (int dan = 2; dan < 10; dan += 4){ //구구단은 2단부터 시작.
-            for (int i = 1; i <= 9; i++){ // 1 ~ 9 까지 곱이 나오도록 조건 잡기
-                for (int j = dan; j < dan+4; j++){
-                    System.out.print(j + "*" + i + "="+(j * i)+"\t");
+        for (int i = 2; i < 10; i += 4){ //구구단은 2단부터 시작.
+            for (int j = 1; j < 10; j++){ // 1 ~ 9 까지 곱이 나오도록 조건 잡기
+                for (int k = i; k < i+4; k++){
+                    System.out.print(k + "*" + j + "="+(k * j)+"\t");
                 }
                 System.out.print("\n"); // 4개씩 출력 되어야 하므로 j*i 값 4개를 출력 후 엔터
             }

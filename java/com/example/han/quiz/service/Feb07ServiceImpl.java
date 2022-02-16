@@ -2,6 +2,7 @@ package com.example.han.quiz.service;
 
 import com.example.han.quiz.service.Feb07Service;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -19,30 +20,17 @@ import java.util.Scanner;
 public class Feb07ServiceImpl implements Feb07Service {
     @Override
     public void dice(Scanner scanner) {
+    // 플레이어(Math 랜덤값)와 컴퓨터(Random 랜덤값) 주사위 굴리기를 해 이기면
+    // "You Win!", 비기면 "Draw.", 지면 "You Lose!"를 출력하세요.
+        Random random = new Random();
+        int player = (int) (Math.random() * 6) + 1;
+        int computer = random.nextInt(5) + 1;
+        String result = "Draw";
+        if(player != computer) result = (player > computer) ? "You Win!" : "You Lose!" ;
+        System.out.println(result);
+        System.out.println("플레이어 주사위 : " + player);
+        System.out.println("컴퓨터 주사위 : " + computer);
 
-        String s = "";
-        int num = (int) (Math.random()*6 +1);
-        switch (num) {
-            case 1:
-                s = "1";
-                break;
-            case 2:
-                s = "2";
-                break;
-            case 3:
-                s = "3";
-                break;
-            case 4:
-                s = "4";
-                break;
-            case 5:
-                s = "5";
-                break;
-            case 6:
-                s = "6";
-                break;
-        }
-        System.out.println(s);
     }
 
 
