@@ -28,10 +28,10 @@ public class QuizController {
                 case "0" :
                     System.out.println("Exit"); return;
                 case "1" :
-                    String[] arr = {"김승현", "김윤섭", "최민서", "한성수", "김태욱",
-                            "Sort", "Stack", "Hash", "Heap", "Greedy",
-                            "Binary Search", "Queue", "Graph", "DFS", "BFS",
-                            "Brute Force", "DP"};
+                    String[] arr = {"김승현",           "김윤섭",        "최민서",        "한성수",
+                                    "Sort",             "Stack",        "Hash",        "Heap",
+                                    "Binary Search",    "Queue",        "Graph",       "DFS",
+                                    "Brute Force",       "DP",         "Greedy",       "BFS",};
                     System.out.println("서브 메뉴 : 0.종료 1.팀별 과제 출력 2.팀장이 맡은 과제 출력 3.선택한 과목의 사람 출력 4.팀원별 과제 수 출력");
                     switch (scanner.next()) {
                         case "0":
