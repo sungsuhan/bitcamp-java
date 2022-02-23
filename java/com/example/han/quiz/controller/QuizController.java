@@ -83,7 +83,7 @@ public class QuizController {
                     }
                     break;
                 case "3" :
-                    System.out.println("서브 메뉴 : 0.종료 1.로또 2.야구 3.좌석예약 4.은행 입출금 5.구구단");
+                    System.out.println("서브 메뉴 : 0.종료 1.로또 2.숫자야구 3.좌석예약 4.은행 입출금 5.구구단");
                     switch (scanner.next()) {
                         case "0" :
                             System.out.println("종료"); return;
@@ -92,7 +92,7 @@ public class QuizController {
                             feb08Service.lotto(scanner);
                             break;
                         case "2" :
-                            System.out.println("야구");
+                            System.out.println("숫자야구");
                             feb08Service.baseball(scanner);
                             break;
                         case "3" :

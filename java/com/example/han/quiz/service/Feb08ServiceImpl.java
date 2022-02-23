@@ -1,5 +1,6 @@
 package com.example.han.quiz.service;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -44,60 +45,46 @@ public class Feb08ServiceImpl implements Feb08Service {
     @Override
     public void baseball(Scanner scanner) {
 
-        int random = (int) (Math.random()*9) +1;
+        Random random = new Random();
         int answer[] = new int[3];
         int input[] = new int[3];
-
-        for (int i=0; i<answer.length; i++) {
-            answer[i] = random;
-        }
-
         int strike = 0;
         int ball = 0;
         int out = 0;
-        String userNum;
+
+        while (answer[0]==0) {
+            answer[0] = random.nextInt(9)+1;
+        }
+        while (answer[0]==answer[1] || answer[1]==0) {
+            answer[1] = random.nextInt(9)+1;
+        }
+        while (answer[1]==answer[2] || answer[2]==0) {
+            answer[2] = random.nextInt(9)+1;
+        }
 
         while (true) {
-            System.out.println("세 자리 숫자 입력");
-                userNum = scanner.nextLine();
-                if (userNum.length() != 3) {
-                    System.out.println("재입력");
-                }else {
-                    break;
+            for (int i=0; i<input.length; i++) {
+                System.out.println((i+1)+"번째 수:");
+                input[i] = scanner.nextInt();
+                if (input[i]>9 || input[i]<=0) {
+                    System.out.println("1~9");
                 }
-        }
-
-        for (int i=0 ; i<input.length; i++) {
-            input[i] = userNum.charAt(i)-48;
-        }
-
-        for (int i=0; i<input.length; i++) {
-            for (int j=0; j<input.length; j++) {
-                if (answer[i] == input[j]) {
-                    if (i == j) {
+            }
+            for (int j=0; j<answer.length; j++) {
+                for (int k=0; k<input.length; k++) {
+                    if (answer[j]==input[k] && j==k) {
                         strike++;
-                    } else {
+                    } else if (answer[j]==input[k] && j!=k) {
                         ball++;
                     }
                 }
             }
+            System.out.println(strike + "스트라이크 " + ball + "볼");
+
+            break;
         }
 
-        if (strike==0 && ball==0) {
-            out++;
-        }
-
-        System.out.println(strike + " 스트라이크");
-        System.out.println(ball + " 볼");
-        System.out.println(out + " 아웃");
-
-        if (strike == 3) {
-            System.out.println("승리");
-        }
-
-
-
-
+        System.out.println(answer[0] + answer[1] +answer[2]);
 
     }
 
