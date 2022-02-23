@@ -45,25 +45,25 @@ public class Feb08ServiceImpl implements Feb08Service {
     @Override
     public void baseball(Scanner scanner) {
 
-        Random random = new Random();
         int answer[] = new int[3];
         int input[] = new int[3];
         int strike = 0;
         int ball = 0;
         int out = 0;
+        boolean loop = true;
 
-        while (answer[0]==0) {
-            answer[0] = random.nextInt(9)+1;
-        }
-        while (answer[0]==answer[1] || answer[1]==0) {
-            answer[1] = random.nextInt(9)+1;
-        }
-        while (answer[1]==answer[2] || answer[2]==0) {
-            answer[2] = random.nextInt(9)+1;
+        for (int i=0; i<answer.length; i++) {
+            answer[i] = (int) (Math.random()*9)+1;
+            for (int j=0; j<i; j++) {
+                if (answer[j]==answer[i]) {
+                    i--;
+                    break;
+                }
+            }
         }
 
-        while (true) {
-            for (int i=0; i<input.length; i++) {
+        while (loop) {
+            for (int i=0; i<answer.length; i++) {
                 System.out.println((i+1)+"번째 수:");
                 input[i] = scanner.nextInt();
                 if (input[i]>9 || input[i]<=0) {
@@ -76,15 +76,22 @@ public class Feb08ServiceImpl implements Feb08Service {
                         strike++;
                     } else if (answer[j]==input[k] && j!=k) {
                         ball++;
+                    } else {
+                        out++;
                     }
                 }
             }
-            System.out.println(strike + "스트라이크 " + ball + "볼");
+            System.out.println(strike + "스트라이크 " + ball + "볼 " + out + "아웃");
+            strike = 0;
+            ball = 0;
+            out = 0;
 
-            break;
+            if (strike == 3) {
+                loop = false;
+
+            }
         }
 
-        System.out.println(answer[0] + answer[1] +answer[2]);
 
     }
 
