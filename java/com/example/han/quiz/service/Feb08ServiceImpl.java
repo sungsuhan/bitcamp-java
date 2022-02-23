@@ -44,6 +44,61 @@ public class Feb08ServiceImpl implements Feb08Service {
     @Override
     public void baseball(Scanner scanner) {
 
+        int random = (int) (Math.random()*9) +1;
+        int answer[] = new int[3];
+        int input[] = new int[3];
+
+        for (int i=0; i<answer.length; i++) {
+            answer[i] = random;
+        }
+
+        int strike = 0;
+        int ball = 0;
+        int out = 0;
+        String userNum;
+
+        while (true) {
+            System.out.println("세 자리 숫자 입력");
+                userNum = scanner.nextLine();
+                if (userNum.length() != 3) {
+                    System.out.println("재입력");
+                }else {
+                    break;
+                }
+        }
+
+        for (int i=0 ; i<input.length; i++) {
+            input[i] = userNum.charAt(i)-48;
+        }
+
+        for (int i=0; i<input.length; i++) {
+            for (int j=0; j<input.length; j++) {
+                if (answer[i] == input[j]) {
+                    if (i == j) {
+                        strike++;
+                    } else {
+                        ball++;
+                    }
+                }
+            }
+        }
+
+        if (strike==0 && ball==0) {
+            out++;
+        }
+
+        System.out.println(strike + " 스트라이크");
+        System.out.println(ball + " 볼");
+        System.out.println(out + " 아웃");
+
+        if (strike == 3) {
+            System.out.println("승리");
+        }
+
+
+
+
+
     }
 
     @Override
