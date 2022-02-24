@@ -49,7 +49,6 @@ public class Feb08ServiceImpl implements Feb08Service {
         int input[] = new int[3];
         int strike = 0;
         int ball = 0;
-        int out = 0;
         boolean loop = true;
 
         for (int i=0; i<answer.length; i++) {
@@ -61,13 +60,17 @@ public class Feb08ServiceImpl implements Feb08Service {
                 }
             }
         }
+//        정답
+//        for (int i=0; i<3; i++) {
+//             System.out.println(answer[i]);
+//            }
 
         while (loop) {
             for (int i=0; i<answer.length; i++) {
                 System.out.println((i+1)+"번째 수:");
                 input[i] = scanner.nextInt();
                 if (input[i]>9 || input[i]<=0) {
-                    System.out.println("1~9");
+                    System.out.println("숫자 1~9 입력");
                 }
             }
             for (int j=0; j<answer.length; j++) {
@@ -76,22 +79,17 @@ public class Feb08ServiceImpl implements Feb08Service {
                         strike++;
                     } else if (answer[j]==input[k] && j!=k) {
                         ball++;
-                    } else {
-                        out++;
                     }
                 }
+                if (strike == 3) {
+                 loop = false;
+                 System.out.println("승리");
+                 }
             }
-            System.out.println(strike + "스트라이크 " + ball + "볼 " + out + "아웃");
+            System.out.println(strike + "스트라이크 " + ball + "볼 ");
             strike = 0;
             ball = 0;
-            out = 0;
-
-            if (strike == 3) {
-                loop = false;
-
-            }
         }
-
 
     }
 
